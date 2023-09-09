@@ -1,22 +1,62 @@
+:root{--cerise: #d83662ff;
+--white: #fcfcfcff;
+--cornsilk: #fffae3ff;
+--tiffany-blue: #99e1d9ff;
+--ultra-violet: #585191ff;
+--Light-orange: #F9DBBD;
+--Davys-grey: #4c4c4c;
+--Sea-green: #32936F;
+}
+@font-face {
+    font-family: Baaz1;
+    src: url(IBMPlexMono-SemiBold.ttf);
+}
+body{
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 .welcome-text{
     text-align: center;
-    margin: auto;
-    color: blue;
+    margin-top: 30px;
+    color: var(--cerise);
+    font-family: baaz1;
+    font-size: 52px;
+}
+#mainlink{
+    background-color: transparent;
+    border: none;
+    font-size: 52px;
+    color: var(--cerise);
+    font-family: baaz1;
+}
+.button{
+    background-color: var(--cornsilk);
+    border: 3px solid var(--cerise);
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: baaz1;
+    transition: all 0.03s ease-in-out 0s;    
+}
+.button:hover{
+    transform: scale(1.15);
+}
+
+.row1{
+    margin-top: 20px;
 }
 
 .container{
-    /* display: flexbox;
-    margin-left: 45%;
-    margin-top: 50px; */
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
+    align-items: center; 
 }
 .row{
     padding: 5px;
-    max-width: 300px;
+
 }
 
 .button{
@@ -30,4 +70,16 @@
 .input{
     padding-left: 30px;
     padding-right:30px;
+}
+
+.Cbutton{
+    padding-left: 47px;
+    padding-right: 43px;
+}
+.input{
+    width: 185px;
+    height: 40px;
+    border: 3px solid var(--cerise);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
 }

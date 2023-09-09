@@ -25,4 +25,15 @@ let buttons = document.querySelectorAll('.button');
         )
         
     })
+
+    let    what =  document.getElementById('mainlink');
+        what.addEventListener('mouseout', () => {
+            what.textContent= "baaz!";
+        })
+
+        what.addEventListener('mouseover', () => {
+            what.textContent= "baaz?";
+        })
+                
+            
         
